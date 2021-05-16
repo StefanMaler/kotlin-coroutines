@@ -1,0 +1,48 @@
+// @pre table of content needs to be at the very top
+:toc: macro
+// @pre source highlighting; see https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#literals-and-source-code
+// among the source highlighters, only rogue worked (ascii doctor intellij idea plugin)
+//   checked coderay, pygment (from https://docs.asciidoctor.org/asciidoctor/latest/syntax-highlighting/ 2021-05-16)
+:source-highlighter: rouge
+
+= protocol
+
+// table of contents is inserted here @pre table of content
+toc::[]
+
+3. handled link:https://kotlinlang.org/docs/coroutines-basics.html[Coroutines basics] in link:src/main/kotlin/topics/coroutines/coroutines.kt
+
+2. tried running coroutines.kts but does not work, even when adding
+
+    implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.4.32") // 1.5.0 is available. Can add this, but still .kts files cannot be run in interactive mode like scratches
+
+only scratch files (intellij idea: ctrl-shift-insert: kotlin) allow interactive mode.
+
+1. copied gradle wrapper, build.gradle.kts, settings.gradle, .gitignore
+
+=== TODOs
+
+==== ktlint with git precommit hook
+
+https://medium.com/mobile-app-development-publication/kotlin-automatic-code-style-formatting-75cc078c6b06
+
+==== kotlin-test
+has binding for Junit(5)
+https://kotlinlang.org/api/latest/kotlin.test/
+
+=== docs
+https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html#67dd1cb4
+
+// https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#literals-and-source-code
+:sourcedir: src/main/kotlin
+
+[source,kotlin]
+----
+include::{sourcedir}/topics/coroutines/coroutines.kt[lines=5..10]
+----
+
+[source,kotlin]
+----
+include::src/main/kotlin/topics/coroutines/coroutines.kt[tag=snippet-main]
+----
+// https://docs.asciidoctor.org/asciidoc/latest/directives/include-tagged-regions/

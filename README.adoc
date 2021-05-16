@@ -1,0 +1,13 @@
+=== update versions
+
+check for later versions (using https://github.com/ben-manes/gradle-versions-plugin[gradle versions plugin])
+
+    $ ./gradlew dependencyUpdates
+
+update gradle version (using https://docs.gradle.org/current/userguide/gradle_wrapper.html[gradle wrapper])
+
+    $ ./gradlew wrapper --gradle-version <version from last line of dependencyUpdates task output>
+
+update plugins and dependencies versions (using https://github.com/patrikerdes/gradle-use-latest-versions-plugin[gradle-use-latest-versions-plugin])
+
+    $ ./gradle useLatestVersions
