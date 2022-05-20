@@ -22,6 +22,17 @@ only scratch files (intellij idea: ctrl-shift-insert: kotlin) allow interactive 
 
 === TODOs
 
+=== coroutines 1.5
+
+https://kotl.in/1.5.0
+https://www.youtube.com/watch?v=EVLnWOcR0is
+    min 5 reactive streams (pretty sure Reactor is reactive streams compliant)
+    6:15: conversion between flow (kotlin coroutines api) and flux (reactor api)
+
+=== kolinx-coroutines-test
+
+https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-test/
+
 ==== ktlint with git precommit hook
 
 https://medium.com/mobile-app-development-publication/kotlin-automatic-code-style-formatting-75cc078c6b06

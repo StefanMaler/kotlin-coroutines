@@ -1,3 +1,9 @@
+[source,kotlin]
+.coroutines.kt
+----
+include::src/main/kotlin/topics/coroutines/coroutines.kt[tags=snippet-main]
+----
+
 === update versions
 
 check for later versions (using https://github.com/ben-manes/gradle-versions-plugin[gradle versions plugin])
@@ -10,4 +16,6 @@ update gradle version (using https://docs.gradle.org/current/userguide/gradle_wr
 
 update plugins and dependencies versions (using https://github.com/patrikerdes/gradle-use-latest-versions-plugin[gradle-use-latest-versions-plugin])
 
-    $ ./gradle useLatestVersions
+    $ ./gradlew useLatestVersions
+
+(does not update kotlin version; check manually: https://kotlinlang.org/docs/releases.html#release-details)
